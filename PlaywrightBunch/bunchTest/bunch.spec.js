@@ -1,19 +1,16 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-test('has title', async ({ page }) => {
-  await page.goto('https://www.bunch.capital/help/en');
+const INPUT_S = ['General','Angel','Funds','investors'];
 
-  // Expect a title "to contain" a substring.
-  //await expect(page).toHaveTitle(/Playwright/);
+test.beforeEach(async ({ page }) => {
+  await page.goto(''); //baseUrl defined in the config file
 });
 
-// test('get started link', async ({ page }) => {
-//   await page.goto('https://playwright.dev/');
+//TEST CASE 1
+test('To open the web application and verify the header', async ({ page }) => {
+  // Open the web application
+  // Verify the header "Advice and answers from the bunch team" to be present on the web application
+  await expect (page.getByRole('heading', { name: 'Advice and answers from the bunch team' })).toBeVisible();
+});
 
-//   // Click the get started link.
-//   await page.getByRole('link', { name: 'Get started' }).click();
-
-//   // Expects the URL to contain intro.
-//   await expect(page).toHaveURL(/.*intro/);
-// });
