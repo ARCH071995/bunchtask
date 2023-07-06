@@ -3,6 +3,10 @@
 **Test Framework**
 Functional Test Automation using Playwright Framework.(https://github.com/microsoft/playwright) which is used for end to end automation testing of modern web applications like Bunch.
 
+My Task tests are present in the bunchTest folder
+
+i.e. bunch.spec.js file (Please see this folder to see my implemented test cases)
+
 # Test Cases
 
 **Test Case 1**
