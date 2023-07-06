@@ -7,6 +7,8 @@ My Task tests are present in the bunchTest folder
 
 i.e. bunch.spec.js file (Please see this folder to see my implemented test cases)
 
+Before running the Tests please make sure you have the required node modules. If not then install it using these steps as mentioned here. (https://playwright.dev/docs/intro)
+
 # Test Cases
 
 **Test Case 1**
