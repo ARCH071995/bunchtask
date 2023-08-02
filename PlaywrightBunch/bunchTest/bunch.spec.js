@@ -7,14 +7,15 @@ test.beforeEach(async ({ page }) => {
   await page.goto(''); //baseUrl defined in the config file
 });
 
-//TEST CASE 1
+//TEST CASE 1 :- To Check and verify the functionalities of the Bunch Application
+
 test('To open the web application and verify the header', async ({ page }) => {
   // Open the web application
   // Verify the header "Advice and answers from the bunch team" to be present on the web application
   await expect (page.getByRole('heading', { name: 'Advice and answers from the bunch team' })).toBeVisible();
 });
 
-//TEST CASE 2
+
 test('To click all tiles alternatively, search and navigate', async ({ page }) => {
 
   //Click the General Tile
