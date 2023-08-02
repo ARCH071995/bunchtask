@@ -19,7 +19,7 @@ test('To open the web application and verify the header', async ({ page }) => {
 test('To click all tiles alternatively, search and navigate', async ({ page }) => {
 
   //Click the General Tile
-  await page.getByRole('link', { name: 'General General information about bunch and its product offering. 21 articles' }).click();
+  await page.getByRole('link', { name: 'General General information about bunch and its product offering.' }).click();
   // Verify the URL to contain general page.
   await expect(page).toHaveURL('/help/en/collections/13159-general');
   //Search using input for General Tile
@@ -34,7 +34,7 @@ test('To click all tiles alternatively, search and navigate', async ({ page }) =
   await page.getByTestId('header').getByRole('link', { name: 'bunch Help Center' }).click();
 
   //Click the Angel Tile
-  await page.getByRole('link', { name: 'Everything you need to know about the Angel Roll-Up and its processes. 16 articles' }).click();
+  await page.getByRole('link', { name: 'Everything you need to know about the Angel Roll-Up and its processes.' }).click();
   // Expects the URL to contain Angel page.
   await expect(page).toHaveURL('/help/en/collections/13168-angel-roll-ups');
   //Search using input for Angel Tile
@@ -58,7 +58,7 @@ test('To click all tiles alternatively, search and navigate', async ({ page }) =
   await page.getByTestId('header').getByRole('link', { name: 'bunch Help Center' }).click();
 
   //Click the syndicate Tile
-  await page.getByRole('link', { name: 'Everything you need to know about our syndicates and its processes. 11 articles' }).click();
+  await page.getByRole('link', { name: 'Everything you need to know about our syndicates and its processes.' }).click();
   // Verify the URL to contain syndicate page.
   await expect(page).toHaveURL('/help/en/collections/13174-syndicates-spvs');
   //Search using input for syndicate Tile
@@ -72,7 +72,7 @@ test('To click all tiles alternatively, search and navigate', async ({ page }) =
   await page.getByTestId('header').getByRole('link', { name: 'bunch Help Center' }).click();
 
   //Click the funds Tile
-  await page.getByRole('link', { name: 'Everything you need to know about setting up your fund on bunch. 3 articles' }).click();
+  await page.getByRole('link', { name: 'Everything you need to know about setting up your fund on bunch.' }).click();
   // Verify the URL to contain fund article page.
   await expect(page).toHaveURL('/help/en/collections/13180-funds');
 });
